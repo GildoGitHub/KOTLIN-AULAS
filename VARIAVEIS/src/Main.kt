@@ -16,11 +16,5 @@ fun main() {
     print("Digita outro numero: ")
     val numero2 = leitor.nextFloat();
 
-    println("Senhor/a $nome, o seu sexo é $sexo media é: ${media(soma(numero1, numero2))}")
+    println("Senhor/a $nome, o seu sexo é $sexo media é: ${(numero1 + numero2)/2}")
 }
-
-fun soma(numero1: Float, numero2: Float): Float {
-    return numero1+numero2;
-}
-
-fun media(resultadoSoma: Float) = resultadoSoma/2
